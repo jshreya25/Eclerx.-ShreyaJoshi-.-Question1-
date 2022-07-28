@@ -1,0 +1,32 @@
+﻿@model List<Test4.Models.Registration>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Student Registration Details</h2>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>StudentId</th>
+        <th>UserId</th>
+        <th>Password</th>
+        <th>DateOfBirth</th>
+        <th>MobileNumber </th>
+        <th>Created Date</th>
+    </tr>
+    @foreach(var Reg in Model)
+            {
+                <tr>
+                    <td>Reg.StudentId</td>
+                    <td>Reg.UserIdId</td>
+                    <td>Reg.Password</td>
+                    <td>Reg.DateOfBirth</td>
+                    <td>Reg.MobileNumber</td>
+                    <td>Reg.CreatedDate</td>
+                </tr>
+            }
+    </div>
+</table>
+
+
